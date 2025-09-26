@@ -1,0 +1,173 @@
+@import "tailwindcss";
+/* استيراد الأنماط المخصصة */
+@import "./custom.css";
+:root {
+  --brunswick-green: #1C4640;
+  --platinum: #E0E0E0;
+  --dark-green: #093A36;
+  --silver: #CBCBCB;
+  --cordovan: #983041;
+  --gradient: linear-gradient(135deg, var(--brunswick-green) 0%, var(--dark-green) 100%);
+}
+*{
+    box-sizing: border-box;
+}
+body {
+  font-family: 'Cairo', sans-serif;
+  background-color: #f8fafc;
+  color: #0f172a;
+  scroll-behavior: smooth;
+
+}
+
+.btn-primary {
+  background: var(--cordovan);
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px -3px rgba(152, 48, 65, 0.4);
+  background: #852a39;
+}
+
+.logo-shape {
+  position: relative;
+  width: 100px;
+  height: 90px;
+  margin: 20px auto;
+  animation: logo-float 8s ease-in-out infinite;
+}
+
+@keyframes logo-float {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-10px) rotate(3deg); }
+}
+
+.logo-shape::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 85px solid var(--brunswick-green);
+}
+
+.logo-shape::after {
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  left: 10px;
+  width: 24px;
+  height: 24px;
+  background: var(--cordovan);
+  border-radius: 50%;
+  box-shadow:
+    -10px 0 rgba(152, 48, 65, 0.5),
+    -20px 0 rgba(152, 48, 65, 0.3);
+}
+
+.mini-logo {
+  position: relative;
+  width: 40px;
+  height: 36px;
+  margin-left: 10px;
+}
+
+.mini-logo::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 34px solid white;
+}
+
+.mini-logo::after {
+  content: "";
+  position: absolute;
+  bottom: 2px;
+  left: 4px;
+  width: 10px;
+  height: 10px;
+  background: var(--cordovan);
+  border-radius: 50%;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.icon-circle-sm {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.icon-circle-sm:hover {
+  background: white;
+  color: var(--brunswick-green);
+  transform: translateY(-2px);
+}
+/* عناوين الاقسام */
+.icon-section-divider {
+    position: relative;
+    margin: 3rem 0;
+    text-align: center;
+}
+
+.icon-section-divider::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, 
+        var(--brunswick-green) 0%, 
+        var(--cordovan) 50%, 
+        var(--brunswick-green) 100%);
+    border-radius: 2px;
+}
+
+.section-title-with-icon {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    background: white;
+    padding: 0.5rem 2rem;
+    position: relative;
+    z-index: 2;
+    color: var(--cordovan);
+    font-weight: 700;
+    font-size: 1.4rem;
+    border: 2px solid var(--brunswick-green);
+    border-radius: 30px;
+}
+
+.dark .section-title-with-icon {
+    background: var(--dark-green);
+    color: var(--platinum);
+    border-color: var(--cordovan);
+}
