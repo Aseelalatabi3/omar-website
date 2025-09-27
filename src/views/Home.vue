@@ -372,61 +372,117 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="relative py-12 md:py-20 bg-gradient-to-b from-white to-slate-50 dark:from-slate-900 dark:to-slate-800 overflow-hidden">
-      <div class="absolute -top-32 -left-32 w-64 h-64 md:w-96 md:h-96 rounded-full blur-3xl animate-floating-slow" style="background-color: rgba(28, 70, 64, 0.1);"></div>
-      <div class="absolute -bottom-32 -right-32 w-64 h-64 md:w-96 md:h-96 rounded-full blur-3xl animate-floating" style="background-color: rgba(152, 48, 65, 0.1);"></div>
+   <section id="contact" class="relative py-8 sm:py-12 md:py-20 bg-gradient-to-b from-white to-slate-50 dark:from-slate-900 dark:to-slate-800 overflow-hidden">
+  <!-- تأثيرات الخلفية - مخفية على الشاشات الصغيرة -->
+  <div class="hidden sm:block absolute -top-20 -left-20 sm:-top-32 sm:-left-32 w-40 h-40 sm:w-64 sm:h-64 md:w-96 md:h-96 rounded-full blur-3xl animate-floating-slow" style="background-color: rgba(28, 70, 64, 0.1);"></div>
+  <div class="hidden sm:block absolute -bottom-20 -right-20 sm:-bottom-32 sm:-right-32 w-40 h-40 sm:w-64 sm:h-64 md:w-96 md:h-96 rounded-full blur-3xl animate-floating" style="background-color: rgba(152, 48, 65, 0.1);"></div>
 
-      <div class="container mx-auto px-4 md:px-6">
-        <div class="text-center mb-12 md:mb-16">
-          <div class="icon-section-divider">
-            <h2 class="section-title-with-icon">تواصل معنا</h2>
-          </div>
-          <p class="text-slate-600 dark:text-slate-300 max-w-2xl mx-auto text-base md:text-lg">
-            نحن هنا لخدمتك، يمكنك التواصل معنا عبر أي وسيلة تفضلها.
-          </p>
+  <div class="container mx-auto px-4 sm:px-6">
+    <div class="text-center mb-8 sm:mb-12 md:mb-16">
+      <div class="icon-section-divider">
+        <h2 class="section-title-with-icon text-xl sm:text-2xl md:text-3xl">تواصل معنا</h2>
+      </div>
+      <p class="text-slate-600 dark:text-slate-300 max-w-2xl mx-auto text-sm sm:text-base md:text-lg px-2">
+        نحن هنا لخدمتك، يمكنك التواصل معنا عبر أي وسيلة تفضلها.
+      </p>
+    </div>
+
+    <!-- بطاقات الاتصال -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 mb-8 sm:mb-12 md:mb-20">
+      <!-- بطاقة العنوان -->
+      <div class="contact-card group bg-white dark:bg-slate-800 rounded-xl sm:rounded-2xl md:rounded-3xl p-4 sm:p-6 md:p-8 shadow-lg hover:shadow-xl transition-all duration-300 relative overflow-hidden">
+        <!-- الأيقونة - موضع معدل للشاشات الصغيرة -->
+        <div class="w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-16 rounded-full flex items-center justify-center mb-3 sm:mb-4 text-base sm:text-lg md:text-2xl group-hover:scale-110 transition-transform absolute top-3 right-3 sm:top-4 sm:right-4 md:-top-4 md:-right-4" style="background-color: rgba(28, 70, 64, 0.2); color: var(--brunswick-green);">
+          <i class="fas fa-map-marker-alt"></i>
         </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mb-12 md:mb-20">
-          <div class="contact-card group bg-white dark:bg-slate-800 rounded-2xl md:rounded-3xl p-6 md:p-8 shadow-xl hover:scale-105 transition-transform relative overflow-hidden">
-            <div class="w-12 h-12 md:w-16 md:h-16 rounded-full flex items-center justify-center mb-4 text-lg md:text-2xl group-hover:scale-110 transition-transform absolute -top-6 -left-6 md:-top-8 md:-left-8" style="background-color: rgba(28, 70, 64, 0.2); color: var(--brunswick-green);">
-              <i class="fas fa-map-marker-alt"></i>
-            </div>
-            <h4 class="text-lg md:text-xl font-bold text-slate-800 dark:text-white mb-2 text-right">العنوان</h4>
-            <p class="text-slate-600 dark:text-slate-300 text-sm md:text-base text-right">تعز - شارع جمال</p>
-          </div>
-
-          <div class="contact-card group bg-white dark:bg-slate-800 rounded-2xl md:rounded-3xl p-6 md:p-8 shadow-xl hover:scale-105 transition-transform relative overflow-hidden">
-            <div class="w-12 h-12 md:w-16 md:h-16 rounded-full flex items-center justify-center mb-4 text-lg md:text-2xl group-hover:scale-110 transition-transform absolute -top-6 -left-6 md:-top-8 md:-left-8" style="background-color: rgba(28, 70, 64, 0.2); color: var(--brunswick-green);">
-              <i class="fas fa-phone"></i>
-            </div>
-            <h4 class="text-lg md:text-xl font-bold text-slate-800 dark:text-white mb-2 text-right">الهاتف</h4>
-            <p class="text-slate-600 dark:text-slate-300 text-sm md:text-base text-right">+967 123 456 789</p>
-          </div>
-
-          <div class="contact-card group bg-white dark:bg-slate-800 rounded-2xl md:rounded-3xl p-6 md:p-8 shadow-xl hover:scale-105 transition-transform relative overflow-hidden">
-            <div class="w-12 h-12 md:w-16 md:h-16 rounded-full flex items-center justify-center mb-4 text-lg md:text-2xl group-hover:scale-110 transition-transform absolute -top-6 -left-6 md:-top-8 md:-left-8" style="background-color: rgba(28, 70, 64, 0.2); color: var(--brunswick-green);">
-              <i class="fas fa-envelope"></i>
-            </div>
-            <h4 class="text-lg md:text-xl font-bold text-slate-800 dark:text-white mb-2 text-right">البريد الإلكتروني</h4>
-            <p class="text-slate-600 dark:text-slate-300 text-sm md:text-base text-right">info@altawil-accountant.com</p>
-          </div>
-        </div>
-
-        <div class="bg-white dark:bg-slate-800 rounded-2xl md:rounded-3xl shadow-2xl p-6 md:p-10 max-w-4xl mx-auto relative overflow-hidden">
-          <div class="absolute -top-20 -right-20 w-40 h-40 md:w-60 md:h-60 rounded-full blur-3xl animate-floating-slow" style="background-color: rgba(28, 70, 64, 0.1);"></div>
-          <div class="absolute -bottom-20 -left-20 w-40 h-40 md:w-60 md:h-60 rounded-full blur-3xl animate-floating" style="background-color: rgba(152, 48, 65, 0.1);"></div>
-
-          <h3 class="text-2xl md:text-3xl font-bold text-slate-800 dark:text-white mb-6 md:mb-8 text-center">أرسل رسالة مباشرة</h3>
-          <form class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
-            <input type="text" placeholder="الاسم الكامل" class="input-field md:col-span-1 text-right" />
-            <input type="email" placeholder="البريد الإلكتروني" class="input-field md:col-span-1 text-right" />
-            <input type="tel" placeholder="رقم الهاتف" class="input-field md:col-span-2 text-right" />
-            <textarea rows="4" placeholder="اكتب رسالتك هنا..." class="input-field md:col-span-2 text-right"></textarea>
-            <button type="submit" class="col-span-2 text-white py-3 rounded-lg font-semibold transition text-base md:text-lg" style="background-color: var(--cordovan);">إرسال الرسالة</button>
-          </form>
+        <div class="pt-10 sm:pt-0">
+          <h4 class="text-base sm:text-lg md:text-xl font-bold text-slate-800 dark:text-white mb-2 text-right">العنوان</h4>
+          <p class="text-slate-600 dark:text-slate-300 text-xs sm:text-sm md:text-base text-right leading-relaxed">تعز - شارع جمال</p>
         </div>
       </div>
-    </section>
+
+      <!-- بطاقة الهاتف -->
+      <div class="contact-card group bg-white dark:bg-slate-800 rounded-xl sm:rounded-2xl md:rounded-3xl p-4 sm:p-6 md:p-8 shadow-lg hover:shadow-xl transition-all duration-300 relative overflow-hidden">
+        <div class="w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-16 rounded-full flex items-center justify-center mb-3 sm:mb-4 text-base sm:text-lg md:text-2xl group-hover:scale-110 transition-transform absolute top-3 right-3 sm:top-4 sm:right-4 md:-top-4 md:-right-4" style="background-color: rgba(28, 70, 64, 0.2); color: var(--brunswick-green);">
+          <i class="fas fa-phone"></i>
+        </div>
+        <div class="pt-10 sm:pt-0">
+          <h4 class="text-base sm:text-lg md:text-xl font-bold text-slate-800 dark:text-white mb-2 text-right">الهاتف</h4>
+          <p class="text-slate-600 dark:text-slate-300 text-xs sm:text-sm md:text-base text-right">+967 123 456 789</p>
+        </div>
+      </div>
+
+      <!-- بطاقة البريد الإلكتروني -->
+      <div class="contact-card group bg-white dark:bg-slate-800 rounded-xl sm:rounded-2xl md:rounded-3xl p-4 sm:p-6 md:p-8 shadow-lg hover:shadow-xl transition-all duration-300 relative overflow-hidden">
+        <div class="w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-16 rounded-full flex items-center justify-center mb-3 sm:mb-4 text-base sm:text-lg md:text-2xl group-hover:scale-110 transition-transform absolute top-3 right-3 sm:top-4 sm:right-4 md:-top-4 md:-right-4" style="background-color: rgba(28, 70, 64, 0.2); color: var(--brunswick-green);">
+          <i class="fas fa-envelope"></i>
+        </div>
+        <div class="pt-10 sm:pt-0">
+          <h4 class="text-base sm:text-lg md:text-xl font-bold text-slate-800 dark:text-white mb-2 text-right">البريد الإلكتروني</h4>
+          <p class="text-slate-600 dark:text-slate-300 text-xs sm:text-sm md:text-base text-right break-all">info@altawil-accountant.com</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- نموذج الاتصال -->
+    <div class="bg-white dark:bg-slate-800 rounded-xl sm:rounded-2xl md:rounded-3xl shadow-lg sm:shadow-2xl p-4 sm:p-6 md:p-10 max-w-4xl mx-auto relative overflow-hidden">
+      <!-- تأثيرات الخلفية - مخفية على الشاشات الصغيرة -->
+      <div class="hidden sm:block absolute -top-10 -right-10 sm:-top-20 sm:-right-20 w-20 h-20 sm:w-40 sm:h-40 md:w-60 md:h-60 rounded-full blur-3xl animate-floating-slow" style="background-color: rgba(28, 70, 64, 0.1);"></div>
+      <div class="hidden sm:block absolute -bottom-10 -left-10 sm:-bottom-20 sm:-left-20 w-20 h-20 sm:w-40 sm:h-40 md:w-60 md:h-60 rounded-full blur-3xl animate-floating" style="background-color: rgba(152, 48, 65, 0.1);"></div>
+
+      <h3 class="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-slate-800 dark:text-white mb-4 sm:mb-6 md:mb-8 text-center">أرسل رسالة مباشرة</h3>
+      
+      <form class="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 md:gap-6">
+        <!-- حقل الاسم -->
+        <div class="sm:col-span-1">
+          <input 
+            type="text" 
+            placeholder="الاسم الكامل" 
+            class="w-full px-3 sm:px-4 py-2 sm:py-3 border border-slate-300 dark:border-slate-600 rounded-lg sm:rounded-xl bg-white dark:bg-slate-700 text-slate-800 dark:text-white text-sm sm:text-base focus:outline-none focus:ring-2 focus:ring-cordovan transition-all duration-300 text-right"
+          />
+        </div>
+        
+        <!-- حقل البريد الإلكتروني -->
+        <div class="sm:col-span-1">
+          <input 
+            type="email" 
+            placeholder="البريد الإلكتروني" 
+            class="w-full px-3 sm:px-4 py-2 sm:py-3 border border-slate-300 dark:border-slate-600 rounded-lg sm:rounded-xl bg-white dark:bg-slate-700 text-slate-800 dark:text-white text-sm sm:text-base focus:outline-none focus:ring-2 focus:ring-cordovan transition-all duration-300 text-right"
+          />
+        </div>
+        
+        <!-- حقل الهاتف -->
+        <div class="sm:col-span-2">
+          <input 
+            type="tel" 
+            placeholder="رقم الهاتف" 
+            class="w-full px-3 sm:px-4 py-2 sm:py-3 border border-slate-300 dark:border-slate-600 rounded-lg sm:rounded-xl bg-white dark:bg-slate-700 text-slate-800 dark:text-white text-sm sm:text-base focus:outline-none focus:ring-2 focus:ring-cordovan transition-all duration-300 text-right"
+          />
+        </div>
+        
+        <!-- حقل الرسالة -->
+        <div class="sm:col-span-2">
+          <textarea 
+            rows="3" 
+            placeholder="اكتب رسالتك هنا..." 
+            class="w-full px-3 sm:px-4 py-2 sm:py-3 border border-slate-300 dark:border-slate-600 rounded-lg sm:rounded-xl bg-white dark:bg-slate-700 text-slate-800 dark:text-white text-sm sm:text-base focus:outline-none focus:ring-2 focus:ring-cordovan transition-all duration-300 text-right resize-vertical min-h-[100px]"
+          ></textarea>
+        </div>
+        
+        <!-- زر الإرسال -->
+        <div class="sm:col-span-2">
+          <button 
+            type="submit" 
+            class="w-full text-white py-2 sm:py-3 rounded-lg font-semibold transition-all duration-300 hover:shadow-lg text-sm sm:text-base md:text-lg" 
+            style="background-color: var(--cordovan);"
+          >
+            إرسال الرسالة
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
     
     <Footer />
   </div>
