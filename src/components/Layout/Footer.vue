@@ -9,7 +9,7 @@
         <p class="text-xs text-slate-300">حلول مالية وقانونية موثوقة</p>
       </div>
 
-      <div class="flex space-x-2 ">
+      <div class="flex space-x-2">
         <a href="#" class="icon-circle-sm"><i class="fab fa-twitter"></i></a>
         <a href="#" class="icon-circle-sm"><i class="fab fa-linkedin-in"></i></a>
         <a href="#" class="icon-circle-sm"><i class="fab fa-facebook-f"></i></a>
@@ -20,9 +20,40 @@
         © 2025 جميع الحقوق محفوظة
       </div>
     </div>
+    
+    <!-- إضافة اسم المصمم مع رابط الفيسبوك -->
+    <div class="container mx-auto px-4 mt-2 pt-2 border-t border-slate-700/30">
+      <div class="text-center">
+        <p class="text-xs text-slate-400">
+          تصميم وتطوير : 
+            <a 
+                href="https://wa.me/967779028434"
+              target="_blank" 
+              rel="noopener noreferrer"
+              class="text-slate-300 hover:text-white transition-colors duration-300 font-medium underline"
+            >
+              أصيل العتابي
+            </a>
+        </p>
+      </div>
+    </div>
   </footer>
 </template>
 
 <script setup>
 // يمكن إضافة أي دالة خاصة بالفوتر هنا
 </script>
+
+<style scoped>
+
+
+.animate-slide {
+  background-size: 200% 100%;
+  animation: slide 3s linear infinite;
+}
+
+@keyframes slide {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+</style>
